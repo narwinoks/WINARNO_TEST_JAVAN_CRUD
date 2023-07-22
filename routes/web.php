@@ -16,7 +16,7 @@ use  App\Http\Controllers\Web\V1\TreeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return  to_route('family.index');
 });
 //route family
 Route::prefix('/family')->name('family.')->group(function () {
