@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Api\V1\FamilyController;
+use  App\Http\Controllers\Api\V1\TreeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,9 @@ Route::prefix('/V1')->group(function(){
         Route::put('/{id}','update')->name('update');
         Route::get('/{id}','show')->name('show');
         Route::delete('/{id}','delete')->name('delete');
+    });
+    Route::controller(TreeController::class)->name('tree')->prefix('/tree')->group(function (){
+        Route::get('/','index')->name('index');
     });
 });
 

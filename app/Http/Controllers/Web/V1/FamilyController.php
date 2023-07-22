@@ -62,7 +62,5 @@ class FamilyController extends Controller
             ->addIndexColumn()
             ->toJson();
     }
-    public  function tree(Request $request){
-        return view('features.V1.family.tree');
-    }
+
 }

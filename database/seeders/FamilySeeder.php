@@ -28,6 +28,12 @@ class FamilySeeder extends Seeder
 
         $model = new Family();
         $model->parent_id =1;
+        $model->name ="Dodi";
+        $model->gender="LAKI-LAKI";
+        $model->save();
+
+        $model = new Family();
+        $model->parent_id =1;
         $model->name ="Dede";
         $model->gender="LAKI-LAKI";
         $model->save();
